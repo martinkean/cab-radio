@@ -1,0 +1,36 @@
+{{ define "main"}}
+
+<article class="blog-post">
+
+
+ <div class="container">
+           <div class="row d-flex">
+           <h1  class="display-4">Current playlist, December 2019.</h1>
+            <table class="table col-8">
+                <thead class="thead-light">
+                  <tr>
+                  <th scope="col">Song</th>
+                  <th scope="col">Artist</th>
+                  <th scope="col">Year</th>
+                  </tr>
+                </thead>
+                <tbody>
+                {{ $url := "/data/Playlist20194CSV.csv" }}
+                {{ $sep := "," }}
+                {{ range $i, $r := getCSV $sep $url }}
+                  <tr>
+                    <td>{{ index $r 0 }}</td>
+                    <td>{{ index $r 1 }}</td>
+                    <td>{{ index $r 2 }}</td>
+                  </tr>
+                {{ end }}
+                </tbody>
+            </table>
+        </div>
+</div>
+
+</article> <!-- /.blog-post -->
+
+{{ end }}
+
+{{- /* vim: set ts=2 sw=2 et: */}}
