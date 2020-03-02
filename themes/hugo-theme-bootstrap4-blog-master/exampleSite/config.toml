@@ -2,7 +2,7 @@
 #
 baseurl = "https://example.org/"
 languageCode = "en-us"
-title = "Critical Analysis Broadcasting"
+title = "Hugo Bootstrap v4 Blog"
 theme = "hugo-theme-bootstrap4-blog"
 # number of posts to show on home/category/tag pages (Default: 10)
 paginate = 5
@@ -34,10 +34,10 @@ summaryLength = 50
 #
 [params]
   # Site author
-  author = "Martin Kean"
+  author = "Your Name"
 
   # Description/subtitle for homepage (can be Markdown)
-  description = "88.3FM Dunedin."
+  description = "A simple Hugo theme based on the Bootstrap v4 blog example."
 
   # Show header (default: true)
   #header_visible = true
